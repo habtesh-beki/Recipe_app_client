@@ -5,29 +5,36 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --background: #272221;
-  --text: #f7f0ec;
+  --background-upper: #f1f1f1;
+  --background-middle: #f5f5f5;
+  --background: #fafafa;
+  --text: #272221;
   --accent: #5077ee;
-  
+  --accent-faded: #5077ee22;
 }
 
 .dark {
-  --background: #f7f0ec;
-  --text: #272221;
+  --background-upper: #f1f1f1;
+  --background-middle: #f5f5f5;
+  --background: #272221;
+  --text: #f7f0ec;
   --accent: #5077ee;
 }
 
 @theme inline {
+  --color-background-middle: var(--background-middle);
+  --color-background-upper: var(--background-upper);
   --color-background: var(--background);
   --color-text: var(--text);
   --color-accent: var(--accent);
+  --color-accent-faded: var(--accent-faded);
 }
 
-@layer base {
+/* @layer base {
   * {
     @apply border-border outline-ring/50;
   }
   body {
     @apply bg-background text-foreground;
   }
-}
+} */
