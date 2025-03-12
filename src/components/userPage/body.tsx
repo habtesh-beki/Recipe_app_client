@@ -65,10 +65,19 @@ export default function Body() {
             ))}
           </div>
         </div>
-        <div className="cursor-pointer " onClick={handleExpand}>
-          {expand ? <Minus className="text-3xl" /> : <Plus />}
+        <div className="flex justify-end">
+          <div className="w-fit cursor-pointer" onClick={handleExpand}>
+            {expand ? (
+              <Button className="bg-button text-white cursor-pointer">
+                Collaps
+              </Button>
+            ) : (
+              <Button className="bg-button text-white cursor-pointer">
+                Create New
+              </Button>
+            )}
+          </div>
         </div>
-        {/* <Plus /> */}
 
         <div className={` w-full ${expand ? "" : "hidden"}`}>
           <h3 className="w-full flex justify-between py-5 text-xl font-bold text-text uppercase">
