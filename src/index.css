@@ -11,6 +11,7 @@
   --text: #272221;
   --accent: #5077ee;
   --accent-faded: #5077ee22;
+  --button: #2f4a9f;
 }
 
 .dark {
@@ -19,6 +20,7 @@
   --background: #272221;
   --text: #f7f0ec;
   --accent: #5077ee;
+  --button: #2f4a9f;
 }
 
 @theme inline {
@@ -27,6 +29,7 @@
   --color-background: var(--background);
   --color-text: var(--text);
   --color-accent: var(--accent);
+  --color-button: var(--button);
   --color-accent-faded: var(--accent-faded);
 }
 
