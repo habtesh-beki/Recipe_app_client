@@ -33,6 +33,10 @@
   --color-accent-faded: var(--accent-faded);
 }
 
+* {
+  font-family: Rubik, sans-serif;
+}
+
 /* @layer base {
   * {
     @apply border-border outline-ring/50;
